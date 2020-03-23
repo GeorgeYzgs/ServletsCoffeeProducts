@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CoffeeProduct</servlet-name>
+        <servlet-class>controllers.CoffeeProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteRow</servlet-name>
+        <servlet-class>controllers.DeleteRow</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateRow</servlet-name>
+        <servlet-class>controllers.UpdateRow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CoffeeProduct</servlet-name>
+        <url-pattern>/CoffeeProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteRow</servlet-name>
+        <url-pattern>/DeleteRow</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateRow</servlet-name>
+        <url-pattern>/UpdateRow</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
